@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-    @Test(description = "Success login")
+    @Test(description = "Success login", retryAnalyzer = Retry.class)
     @Description("Validation of correct working the login with the valid data")
     public void worldFeedPageShouldBeOpenedAfterLogIn() {
         loginSteps
